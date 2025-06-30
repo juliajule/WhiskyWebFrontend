@@ -22,7 +22,12 @@ function showModal(id) {
 }
 
 function hideModal(id) {
-    document.getElementById(id).style.display = 'none';
+    const modal = document.getElementById(id);
+    modal.style.display = "none";
+    const form = modal.querySelector("form");
+    if (form) {
+        form.reset();
+    }
 }
 
 function showTab(tabName) {
