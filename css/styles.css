@@ -194,16 +194,14 @@ input::placeholder, textarea::placeholder {
 }
 
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #2c1810;
-    padding: 30px;
-    border-radius: 10px;
-    border: 2px solid #d4af37;
-    max-width: 500px;
+    max-height: 90vh; 
+    overflow-y: auto;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #2b1b10;
+    border-radius: 8px;
     width: 90%;
+    max-width: 600px;
 }
 
 .close {
